@@ -1,0 +1,614 @@
+[12-Oct-2019 12:01:10 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php on line 490
+[12-Oct-2019 12:10:11 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php on line 490
+[12-Oct-2019 12:17:51 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php on line 490
+[12-Oct-2019 12:34:58 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/bin:/usr/bin:/usr/local/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '4706',
+    'HTTP_COOKIE' => 'advanced-frontend=134fvk66mod4ak1sr1di749m40; _csrf-frontend=b0298863594087016d4e2a45fe7c6b7a1c78f49abd29da74c629a97fb632955ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PkQHaa8OBC4nXEA3GdlTGFw_cJxDUEO6%22%3B%7D; _identity-frontend=966d1adb5039b6f95f8d40e8ee5b346408b00adec366e30c81683e1457531389a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B12%2C%22wTtQqW36WvNV1LXOrL2pL4kXGWFYmY-X%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'tracerstudy.puslit-suska.com',
+    'HTTP_REFERER' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php?r=site/alumni',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-J500G Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ORIGIN' => 'http://tracerstudy.puslit-suska.com',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'DOCUMENT_ROOT' => '/home/puslitsu/tracerstudy.puslit-suska.com',
+    'REMOTE_ADDR' => '112.215.245.230',
+    'REMOTE_PORT' => '60501',
+    'SERVER_ADDR' => '103.129.220.6',
+    'SERVER_NAME' => 'tracerstudy.puslit-suska.com',
+    'SERVER_ADMIN' => 'webmaster@tracerstudy.puslit-suska.com',
+    'SERVER_PORT' => '80',
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fpost-alumni',
+    'SCRIPT_FILENAME' => '/home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'QUERY_STRING' => 'r=site%2Fpost-alumni',
+    'SCRIPT_URI' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'SCRIPT_URL' => '/frontend/web/index.php',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1570883698.279799938201904296875,
+    'REQUEST_TIME' => 1570883698,
+    'argv' => [
+        'r=site%2Fpost-alumni',
+    ],
+    'argc' => 1,
+]
+[12-Oct-2019 12:35:18 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/bin:/usr/bin:/usr/local/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '4706',
+    'HTTP_COOKIE' => 'advanced-frontend=134fvk66mod4ak1sr1di749m40; _csrf-frontend=b0298863594087016d4e2a45fe7c6b7a1c78f49abd29da74c629a97fb632955ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PkQHaa8OBC4nXEA3GdlTGFw_cJxDUEO6%22%3B%7D; _identity-frontend=966d1adb5039b6f95f8d40e8ee5b346408b00adec366e30c81683e1457531389a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B12%2C%22wTtQqW36WvNV1LXOrL2pL4kXGWFYmY-X%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'tracerstudy.puslit-suska.com',
+    'HTTP_REFERER' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php?r=site/alumni',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-J500G Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ORIGIN' => 'http://tracerstudy.puslit-suska.com',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'DOCUMENT_ROOT' => '/home/puslitsu/tracerstudy.puslit-suska.com',
+    'REMOTE_ADDR' => '112.215.245.230',
+    'REMOTE_PORT' => '54235',
+    'SERVER_ADDR' => '103.129.220.6',
+    'SERVER_NAME' => 'tracerstudy.puslit-suska.com',
+    'SERVER_ADMIN' => 'webmaster@tracerstudy.puslit-suska.com',
+    'SERVER_PORT' => '80',
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fpost-alumni',
+    'SCRIPT_FILENAME' => '/home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'QUERY_STRING' => 'r=site%2Fpost-alumni',
+    'SCRIPT_URI' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'SCRIPT_URL' => '/frontend/web/index.php',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1570883718.0900380611419677734375,
+    'REQUEST_TIME' => 1570883718,
+    'argv' => [
+        'r=site%2Fpost-alumni',
+    ],
+    'argc' => 1,
+]
+[12-Oct-2019 12:35:21 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/bin:/usr/bin:/usr/local/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '4706',
+    'HTTP_COOKIE' => 'advanced-frontend=134fvk66mod4ak1sr1di749m40; _csrf-frontend=b0298863594087016d4e2a45fe7c6b7a1c78f49abd29da74c629a97fb632955ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PkQHaa8OBC4nXEA3GdlTGFw_cJxDUEO6%22%3B%7D; _identity-frontend=966d1adb5039b6f95f8d40e8ee5b346408b00adec366e30c81683e1457531389a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B12%2C%22wTtQqW36WvNV1LXOrL2pL4kXGWFYmY-X%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'tracerstudy.puslit-suska.com',
+    'HTTP_REFERER' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php?r=site/alumni',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-J500G Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ORIGIN' => 'http://tracerstudy.puslit-suska.com',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'DOCUMENT_ROOT' => '/home/puslitsu/tracerstudy.puslit-suska.com',
+    'REMOTE_ADDR' => '112.215.245.230',
+    'REMOTE_PORT' => '54235',
+    'SERVER_ADDR' => '103.129.220.6',
+    'SERVER_NAME' => 'tracerstudy.puslit-suska.com',
+    'SERVER_ADMIN' => 'webmaster@tracerstudy.puslit-suska.com',
+    'SERVER_PORT' => '80',
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fpost-alumni',
+    'SCRIPT_FILENAME' => '/home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'QUERY_STRING' => 'r=site%2Fpost-alumni',
+    'SCRIPT_URI' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'SCRIPT_URL' => '/frontend/web/index.php',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1570883721.226274967193603515625,
+    'REQUEST_TIME' => 1570883721,
+    'argv' => [
+        'r=site%2Fpost-alumni',
+    ],
+    'argc' => 1,
+]
+[12-Oct-2019 12:36:21 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/bin:/usr/bin:/usr/local/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '4706',
+    'HTTP_COOKIE' => 'advanced-frontend=134fvk66mod4ak1sr1di749m40; _csrf-frontend=b0298863594087016d4e2a45fe7c6b7a1c78f49abd29da74c629a97fb632955ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PkQHaa8OBC4nXEA3GdlTGFw_cJxDUEO6%22%3B%7D; _identity-frontend=966d1adb5039b6f95f8d40e8ee5b346408b00adec366e30c81683e1457531389a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B12%2C%22wTtQqW36WvNV1LXOrL2pL4kXGWFYmY-X%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'tracerstudy.puslit-suska.com',
+    'HTTP_REFERER' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php?r=site/alumni',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-J500G Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ORIGIN' => 'http://tracerstudy.puslit-suska.com',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'DOCUMENT_ROOT' => '/home/puslitsu/tracerstudy.puslit-suska.com',
+    'REMOTE_ADDR' => '112.215.245.230',
+    'REMOTE_PORT' => '34875',
+    'SERVER_ADDR' => '103.129.220.6',
+    'SERVER_NAME' => 'tracerstudy.puslit-suska.com',
+    'SERVER_ADMIN' => 'webmaster@tracerstudy.puslit-suska.com',
+    'SERVER_PORT' => '80',
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fpost-alumni',
+    'SCRIPT_FILENAME' => '/home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'QUERY_STRING' => 'r=site%2Fpost-alumni',
+    'SCRIPT_URI' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'SCRIPT_URL' => '/frontend/web/index.php',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1570883781.4778320789337158203125,
+    'REQUEST_TIME' => 1570883781,
+    'argv' => [
+        'r=site%2Fpost-alumni',
+    ],
+    'argc' => 1,
+]
+[12-Oct-2019 12:37:13 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/bin:/usr/bin:/usr/local/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '4706',
+    'HTTP_COOKIE' => 'advanced-frontend=134fvk66mod4ak1sr1di749m40; _csrf-frontend=b0298863594087016d4e2a45fe7c6b7a1c78f49abd29da74c629a97fb632955ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PkQHaa8OBC4nXEA3GdlTGFw_cJxDUEO6%22%3B%7D; _identity-frontend=966d1adb5039b6f95f8d40e8ee5b346408b00adec366e30c81683e1457531389a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B12%2C%22wTtQqW36WvNV1LXOrL2pL4kXGWFYmY-X%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'tracerstudy.puslit-suska.com',
+    'HTTP_REFERER' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php?r=site/alumni',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-J500G Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Mobile Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ORIGIN' => 'http://tracerstudy.puslit-suska.com',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'DOCUMENT_ROOT' => '/home/puslitsu/tracerstudy.puslit-suska.com',
+    'REMOTE_ADDR' => '112.215.245.230',
+    'REMOTE_PORT' => '22364',
+    'SERVER_ADDR' => '103.129.220.6',
+    'SERVER_NAME' => 'tracerstudy.puslit-suska.com',
+    'SERVER_ADMIN' => 'webmaster@tracerstudy.puslit-suska.com',
+    'SERVER_PORT' => '80',
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fpost-alumni',
+    'SCRIPT_FILENAME' => '/home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'QUERY_STRING' => 'r=site%2Fpost-alumni',
+    'SCRIPT_URI' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'SCRIPT_URL' => '/frontend/web/index.php',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1570883833.797914981842041015625,
+    'REQUEST_TIME' => 1570883833,
+    'argv' => [
+        'r=site%2Fpost-alumni',
+    ],
+    'argc' => 1,
+]
+[12-Oct-2019 12:51:15 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\IntegrityException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#4 {main}
+Previous exception:
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_jurusan' cannot be null' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('<span class="st...')
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Schema.php(432): yii\db\Command->execute()
+#3 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(600): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php(397): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\SiteController->actionPostAlumni()
+#8 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_jurusan' cannot be null
+The SQL being executed was: INSERT INTO `hasil_kuisioner_alumni` (`id_user`, `nama`, `format_jawaban`, `pertanyaan_jawaban`, `id_jurusan`) VALUES (13, 'Piliang06', '[\"text\",\"text\",\"text\",\"radio2\",\"radio2\",\"text\",\"radio2\",\"radio\",\"radio\",\"radio2\",\"radio\",\"radio\",\"text\",\"radio2\",\"radio2\",\"text\",\"text\",\"radio\",\"radio\",\"radio2\",\"radio\",\"radio2\",\"radio2\",\"text\",\"text\",\"date\",\"radio\",\"text\",\"number\",\"email\",\"number\",\"number\",\"radio\",\"radio\"]', '[{\"pertanyaan\":\"Nama tempat bekerja sekarang? (Sesuai dengan form nama perusahaan sekarang diatas)\",\"jawaban\":\"PT. Sprint Asia Teknologi\"},{\"pertanyaan\":\"Alamat tempat bekerja sekarang?\",\"jawaban\":\"Jl. Rs Fatmawati Jakarta Selatan\"},{\"pertanyaan\":\"Kabupaten\\/Provinsi Bekerja?\",\"jawaban\":\"Jakarta Selatan\"},{\"pertanyaan\":\"Jenis Instansi\\/Bidang Usaha\\/Industri?\",\"jawaban\":\"Swasta\"},{\"pertanyaan\":\"Jabatan\\/posisi dalam bekerja?\",\"jawaban\":\"Programmer\"},{\"pertanyaan\":\"Bulan dan tahun mulai bekkerja?\",\"jawaban\":\"April\"},{\"pertanyaan\":\"Dari mana saudara mengatahui atau mendapatkan informasi mengenai adanya pekerjaan?\",\"jawaban\":\"Lain-lain yaitu Teman\"},{\"pertanyaan\":\"Berapa rata-rata pendapatan saudara pada pekerjaan sekarang?\",\"jawaban\":[\"2.500.000 - 5.000.000\"]},{\"pertanyaan\":\"Menurut saudara bagaimana kebutuhan instansi tempat saudara bekerja terhadap lulusan dari prodi atau jurusan saudara?\",\"jawaban\":[\"Tinggi\"]},{\"pertanyaan\":\"Secara Umum, apa pertimbangan utama saudara dalam memilih pekerjaan yang terakhir sekarang?\",\"jawaban\":\"Ssuai bidang keilmuan\"},{\"pertanyaan\":\"Sejauh mana perkejaan saudara yang terakhir\\/sekarang sesuai dengan harapan ketika pertama kali belajar di UNIVERSITAS ISLAM SULTAN SYARIF KASIM II RIAU?\",\"jawaban\":[\"Sesuai harapan\"]},{\"pertanyaan\":\"Apakah saudara puas dengan pekerjaan saudara terkahir \\/ sekarang?\",\"jawaban\":[\"Puas\"]},{\"pertanyaan\":\"Nama tempat bekerja?(Sesuai dengan form nama perusahaan pertama diatas)\",\"jawaban\":\"PT. Sprint Asia Teknologi\"},{\"pertanyaan\":\"Jenis Instransi\\/ bidang usaha\\/ industri?\",\"jawaban\":\"Swasta\"},{\"pertanyaan\":\"Jabatan \\/ posisi pekerjaan pertama?\",\"jawaban\":\"Programmer\"},{\"pertanyaan\":\"Bulan dan tahun mulai bekerja?\",\"jawaban\":\"April\"},{\"pertanyaan\":\"Bulan dan tahun berhenti berkerja?\",\"jawaban\":\"Sampai Sekarang\"},{\"pertanyaan\":\"Darimana saudara mengetahui atau mendapatkan informasi mengenai adanya pekerjaan pertama ini?\",\"jawaban\":[\"Teman, saudara, dll\"]},{\"pertanyaan\":\"Berapa rata-rata pendapatan (seluruhnya) saudara pada pekerjaan pertama ?\",\"jawaban\":[\"2.500.000 \\u2013 5.000.000\"]},{\"pertanyaan\":\"Secara umum apa pertimbangan utama saudara dalam memilih pekerjaan pertama ?\",\"jawaban\":\"Sesuai bidang keilmuan\"},{\"pertanyaan\":\"Berapa lama saudara menunggu untu mendapatkan pekerjaan pertama setelah lulus ?\",\"jawaban\":[\"< 3 bulan\"]},{\"pertanyaan\":\"Faktor yang paling berperan dalam mendapatakan peerjaan pertama saudara ? ?\",\"jawaban\":\"Ekstrkulikuler, organisasi, kelompok studi\"},{\"pertanyaan\":\"Jenis Instansi\\/Bidang Usaha\\/Industri?\",\"jawaban\":\"Swasta\"},{\"pertanyaan\":\"Nama?\",\"jawaban\":\"Rizky Yananda\"},{\"pertanyaan\":\"Tempat Lahir?\",\"jawaban\":\"MEDAN\"},{\"pertanyaan\":\"Tanggal Lahir?\",\"jawaban\":\"1996-06-06\"},{\"pertanyaan\":\"Jenis Kelamin?\",\"jawaban\":[\"laki-laki\"]},{\"pertanyaan\":\"Alamat Sekarang\\t?\",\"jawaban\":\"Jl. Hidup Baru Jakarta Selatan\"},{\"pertanyaan\":\"No. Telp\\/Hp\\t?\",\"jawaban\":\"082389123898\"},{\"pertanyaan\":\"E-mail\\t?\",\"jawaban\":\"yanandarizky@gmail.com\"},{\"pertanyaan\":\"Th. Masuk\\t?\",\"jawaban\":\"2014\"},{\"pertanyaan\":\"Th. Lulus\\t?\",\"jawaban\":\"2018\"},{\"pertanyaan\":\"Prodi\\t?\",\"jawaban\":[\"Teknik Informatika\"]},{\"pertanyaan\":\"IPK Lulusan\\t?\",\"jawaban\":[\"3.00-3.49\"]}]', NULL)' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ha...')
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('<span class="st...')
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Schema.php(432): yii\db\Command->execute()
+#3 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(600): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php(397): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\SiteController->actionPostAlumni()
+#8 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'id_jurusan' cannot be null
+)
+
+$_SERVER = [
+    'PATH' => '/bin:/usr/bin:/usr/local/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,en-US;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '4802',
+    'HTTP_COOKIE' => 'advanced-frontend=uocjonun440u1ej2ulfpadr917; _identity-frontend=17acef23b63b8779b66bdad08f59f31ef837db7155f99c93b459f0dc58e8bafba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22nb0qg1JTycVrpKDGr2A8Y_lUR1ymV1fi%22%2C2592000%5D%22%3B%7D; _csrf-frontend=7ec3d814da3bb504eae89cd5504368015dc69d867779f38fe8825c5aee6d09ffa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22kQgKavAMxT13vv42Q0We_HGDfnXrUODC%22%3B%7D',
+    'HTTP_HOST' => 'tracerstudy.puslit-suska.com',
+    'HTTP_REFERER' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php?r=site/alumni',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 7.1.2; id-id; Redmi 4A Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/11.1.7-g',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ORIGIN' => 'http://tracerstudy.puslit-suska.com',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'DOCUMENT_ROOT' => '/home/puslitsu/tracerstudy.puslit-suska.com',
+    'REMOTE_ADDR' => '158.140.187.236',
+    'REMOTE_PORT' => '5874',
+    'SERVER_ADDR' => '103.129.220.6',
+    'SERVER_NAME' => 'tracerstudy.puslit-suska.com',
+    'SERVER_ADMIN' => 'webmaster@tracerstudy.puslit-suska.com',
+    'SERVER_PORT' => '80',
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fpost-alumni',
+    'SCRIPT_FILENAME' => '/home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'QUERY_STRING' => 'r=site%2Fpost-alumni',
+    'SCRIPT_URI' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'SCRIPT_URL' => '/frontend/web/index.php',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1570884675.72375011444091796875,
+    'REQUEST_TIME' => 1570884675,
+    'argv' => [
+        'r=site%2Fpost-alumni',
+    ],
+    'argc' => 1,
+]
+[12-Oct-2019 12:52:28 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\IntegrityException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#4 {main}
+Previous exception:
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_jurusan' cannot be null' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('<span class="st...')
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Schema.php(432): yii\db\Command->execute()
+#3 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(600): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php(397): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\SiteController->actionPostAlumni()
+#8 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_jurusan' cannot be null
+The SQL being executed was: INSERT INTO `hasil_kuisioner_alumni` (`id_user`, `nama`, `format_jawaban`, `pertanyaan_jawaban`, `id_jurusan`) VALUES (13, 'Piliang06', '[\"text\",\"text\",\"text\",\"radio2\",\"radio2\",\"text\",\"radio2\",\"radio\",\"radio\",\"radio2\",\"radio\",\"radio\",\"text\",\"radio2\",\"radio2\",\"text\",\"text\",\"radio\",\"radio\",\"radio2\",\"radio\",\"radio2\",\"radio2\",\"text\",\"text\",\"date\",\"radio\",\"text\",\"number\",\"email\",\"number\",\"number\",\"radio\",\"radio\"]', '[{\"pertanyaan\":\"Nama tempat bekerja sekarang? (Sesuai dengan form nama perusahaan sekarang diatas)\",\"jawaban\":\"PT. Sprint Asia Teknologi\"},{\"pertanyaan\":\"Alamat tempat bekerja sekarang?\",\"jawaban\":\"Jl. Rs Fatmawati Jakarta Selatan\"},{\"pertanyaan\":\"Kabupaten\\/Provinsi Bekerja?\",\"jawaban\":\"Jakarta Selatan\"},{\"pertanyaan\":\"Jenis Instansi\\/Bidang Usaha\\/Industri?\",\"jawaban\":\"Swasta\"},{\"pertanyaan\":\"Jabatan\\/posisi dalam bekerja?\",\"jawaban\":\"Programmer\"},{\"pertanyaan\":\"Bulan dan tahun mulai bekkerja?\",\"jawaban\":\"April\"},{\"pertanyaan\":\"Dari mana saudara mengatahui atau mendapatkan informasi mengenai adanya pekerjaan?\",\"jawaban\":\"Lain-lain yaitu Teman\"},{\"pertanyaan\":\"Berapa rata-rata pendapatan saudara pada pekerjaan sekarang?\",\"jawaban\":[\"2.500.000 - 5.000.000\"]},{\"pertanyaan\":\"Menurut saudara bagaimana kebutuhan instansi tempat saudara bekerja terhadap lulusan dari prodi atau jurusan saudara?\",\"jawaban\":[\"Tinggi\"]},{\"pertanyaan\":\"Secara Umum, apa pertimbangan utama saudara dalam memilih pekerjaan yang terakhir sekarang?\",\"jawaban\":\"Ssuai bidang keilmuan\"},{\"pertanyaan\":\"Sejauh mana perkejaan saudara yang terakhir\\/sekarang sesuai dengan harapan ketika pertama kali belajar di UNIVERSITAS ISLAM SULTAN SYARIF KASIM II RIAU?\",\"jawaban\":[\"Sesuai harapan\"]},{\"pertanyaan\":\"Apakah saudara puas dengan pekerjaan saudara terkahir \\/ sekarang?\",\"jawaban\":[\"Puas\"]},{\"pertanyaan\":\"Nama tempat bekerja?(Sesuai dengan form nama perusahaan pertama diatas)\",\"jawaban\":\"PT. Sprint Asia Teknologi\"},{\"pertanyaan\":\"Jenis Instransi\\/ bidang usaha\\/ industri?\",\"jawaban\":\"Swasta\"},{\"pertanyaan\":\"Jabatan \\/ posisi pekerjaan pertama?\",\"jawaban\":\"Programmer\"},{\"pertanyaan\":\"Bulan dan tahun mulai bekerja?\",\"jawaban\":\"April\"},{\"pertanyaan\":\"Bulan dan tahun berhenti berkerja?\",\"jawaban\":\"Sampai Sekarang\"},{\"pertanyaan\":\"Darimana saudara mengetahui atau mendapatkan informasi mengenai adanya pekerjaan pertama ini?\",\"jawaban\":[\"Teman, saudara, dll\"]},{\"pertanyaan\":\"Berapa rata-rata pendapatan (seluruhnya) saudara pada pekerjaan pertama ?\",\"jawaban\":[\"2.500.000 \\u2013 5.000.000\"]},{\"pertanyaan\":\"Secara umum apa pertimbangan utama saudara dalam memilih pekerjaan pertama ?\",\"jawaban\":\"Sesuai bidang keilmuan\"},{\"pertanyaan\":\"Berapa lama saudara menunggu untu mendapatkan pekerjaan pertama setelah lulus ?\",\"jawaban\":[\"< 3 bulan\"]},{\"pertanyaan\":\"Faktor yang paling berperan dalam mendapatakan peerjaan pertama saudara ? ?\",\"jawaban\":\"Ekstrkulikuler, organisasi, kelompok studi\"},{\"pertanyaan\":\"Jenis Instansi\\/Bidang Usaha\\/Industri?\",\"jawaban\":\"Swasta\"},{\"pertanyaan\":\"Nama?\",\"jawaban\":\"Rizky Yananda\"},{\"pertanyaan\":\"Tempat Lahir?\",\"jawaban\":\"MEDAN\"},{\"pertanyaan\":\"Tanggal Lahir?\",\"jawaban\":\"1996-06-06\"},{\"pertanyaan\":\"Jenis Kelamin?\",\"jawaban\":[\"laki-laki\"]},{\"pertanyaan\":\"Alamat Sekarang\\t?\",\"jawaban\":\"Jl. Hidup Baru Jakarta Selatan\"},{\"pertanyaan\":\"No. Telp\\/Hp\\t?\",\"jawaban\":\"082389123898\"},{\"pertanyaan\":\"E-mail\\t?\",\"jawaban\":\"yanandarizky@gmail.com\"},{\"pertanyaan\":\"Th. Masuk\\t?\",\"jawaban\":\"2014\"},{\"pertanyaan\":\"Th. Lulus\\t?\",\"jawaban\":\"2018\"},{\"pertanyaan\":\"Prodi\\t?\",\"jawaban\":[\"Teknik Informatika\"]},{\"pertanyaan\":\"IPK Lulusan\\t?\",\"jawaban\":[\"3.00-3.49\"]}]', NULL)' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ha...')
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('<span class="st...')
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Schema.php(432): yii\db\Command->execute()
+#3 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(600): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php(397): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\SiteController->actionPostAlumni()
+#8 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'id_jurusan' cannot be null
+)
+
+$_SERVER = [
+    'PATH' => '/bin:/usr/bin:/usr/local/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,en-US;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '4802',
+    'HTTP_COOKIE' => 'advanced-frontend=uocjonun440u1ej2ulfpadr917; _identity-frontend=17acef23b63b8779b66bdad08f59f31ef837db7155f99c93b459f0dc58e8bafba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22nb0qg1JTycVrpKDGr2A8Y_lUR1ymV1fi%22%2C2592000%5D%22%3B%7D; _csrf-frontend=7ec3d814da3bb504eae89cd5504368015dc69d867779f38fe8825c5aee6d09ffa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22kQgKavAMxT13vv42Q0We_HGDfnXrUODC%22%3B%7D',
+    'HTTP_HOST' => 'tracerstudy.puslit-suska.com',
+    'HTTP_REFERER' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php?r=site/alumni',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 7.1.2; id-id; Redmi 4A Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/11.1.7-g',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ORIGIN' => 'http://tracerstudy.puslit-suska.com',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'DOCUMENT_ROOT' => '/home/puslitsu/tracerstudy.puslit-suska.com',
+    'REMOTE_ADDR' => '158.140.187.236',
+    'REMOTE_PORT' => '31932',
+    'SERVER_ADDR' => '103.129.220.6',
+    'SERVER_NAME' => 'tracerstudy.puslit-suska.com',
+    'SERVER_ADMIN' => 'webmaster@tracerstudy.puslit-suska.com',
+    'SERVER_PORT' => '80',
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fpost-alumni',
+    'SCRIPT_FILENAME' => '/home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'QUERY_STRING' => 'r=site%2Fpost-alumni',
+    'SCRIPT_URI' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'SCRIPT_URL' => '/frontend/web/index.php',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1570884748.621840000152587890625,
+    'REQUEST_TIME' => 1570884748,
+    'argv' => [
+        'r=site%2Fpost-alumni',
+    ],
+    'argc' => 1,
+]
+[12-Oct-2019 12:56:17 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\IntegrityException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\IntegrityException))
+#4 {main}
+Previous exception:
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_jurusan' cannot be null' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('<span class="st...')
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Schema.php(432): yii\db\Command->execute()
+#3 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(600): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php(397): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\SiteController->actionPostAlumni()
+#8 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_jurusan' cannot be null
+The SQL being executed was: INSERT INTO `hasil_kuisioner_alumni` (`id_user`, `nama`, `format_jawaban`, `pertanyaan_jawaban`, `id_jurusan`) VALUES (13, 'Piliang06', '[\"text\",\"text\",\"text\",\"radio2\",\"radio2\",\"text\",\"radio2\",\"radio\",\"radio\",\"radio2\",\"radio\",\"radio\",\"text\",\"radio2\",\"radio2\",\"text\",\"text\",\"radio\",\"radio\",\"radio2\",\"radio\",\"radio2\",\"radio2\",\"text\",\"text\",\"date\",\"radio\",\"text\",\"number\",\"email\",\"number\",\"number\",\"radio\",\"radio\"]', '[{\"pertanyaan\":\"Nama tempat bekerja sekarang? (Sesuai dengan form nama perusahaan sekarang diatas)\",\"jawaban\":\"PT. Sprint Asia Teknologi\"},{\"pertanyaan\":\"Alamat tempat bekerja sekarang?\",\"jawaban\":\"Jl. Rs Fatmawati Jakarta Selatan\"},{\"pertanyaan\":\"Kabupaten\\/Provinsi Bekerja?\",\"jawaban\":\"Jakarta Selatan\"},{\"pertanyaan\":\"Jenis Instansi\\/Bidang Usaha\\/Industri?\",\"jawaban\":\"Swasta\"},{\"pertanyaan\":\"Jabatan\\/posisi dalam bekerja?\",\"jawaban\":\"Programmer\"},{\"pertanyaan\":\"Bulan dan tahun mulai bekkerja?\",\"jawaban\":\"April\"},{\"pertanyaan\":\"Dari mana saudara mengatahui atau mendapatkan informasi mengenai adanya pekerjaan?\",\"jawaban\":\"Lain-lain yaitu Teman\"},{\"pertanyaan\":\"Berapa rata-rata pendapatan saudara pada pekerjaan sekarang?\",\"jawaban\":[\"2.500.000 - 5.000.000\"]},{\"pertanyaan\":\"Menurut saudara bagaimana kebutuhan instansi tempat saudara bekerja terhadap lulusan dari prodi atau jurusan saudara?\",\"jawaban\":[\"Tinggi\"]},{\"pertanyaan\":\"Secara Umum, apa pertimbangan utama saudara dalam memilih pekerjaan yang terakhir sekarang?\",\"jawaban\":\"Ssuai bidang keilmuan\"},{\"pertanyaan\":\"Sejauh mana perkejaan saudara yang terakhir\\/sekarang sesuai dengan harapan ketika pertama kali belajar di UNIVERSITAS ISLAM SULTAN SYARIF KASIM II RIAU?\",\"jawaban\":[\"Sesuai harapan\"]},{\"pertanyaan\":\"Apakah saudara puas dengan pekerjaan saudara terkahir \\/ sekarang?\",\"jawaban\":[\"Puas\"]},{\"pertanyaan\":\"Nama tempat bekerja?(Sesuai dengan form nama perusahaan pertama diatas)\",\"jawaban\":\"PT. Sprint Asia Teknologi\"},{\"pertanyaan\":\"Jenis Instransi\\/ bidang usaha\\/ industri?\",\"jawaban\":\"Swasta\"},{\"pertanyaan\":\"Jabatan \\/ posisi pekerjaan pertama?\",\"jawaban\":\"Programmer\"},{\"pertanyaan\":\"Bulan dan tahun mulai bekerja?\",\"jawaban\":\"April\"},{\"pertanyaan\":\"Bulan dan tahun berhenti berkerja?\",\"jawaban\":\"Sampai Sekarang\"},{\"pertanyaan\":\"Darimana saudara mengetahui atau mendapatkan informasi mengenai adanya pekerjaan pertama ini?\",\"jawaban\":[\"Teman, saudara, dll\"]},{\"pertanyaan\":\"Berapa rata-rata pendapatan (seluruhnya) saudara pada pekerjaan pertama ?\",\"jawaban\":[\"2.500.000 \\u2013 5.000.000\"]},{\"pertanyaan\":\"Secara umum apa pertimbangan utama saudara dalam memilih pekerjaan pertama ?\",\"jawaban\":\"Sesuai bidang keilmuan\"},{\"pertanyaan\":\"Berapa lama saudara menunggu untu mendapatkan pekerjaan pertama setelah lulus ?\",\"jawaban\":[\"< 3 bulan\"]},{\"pertanyaan\":\"Faktor yang paling berperan dalam mendapatakan peerjaan pertama saudara ? ?\",\"jawaban\":\"Ekstrkulikuler, organisasi, kelompok studi\"},{\"pertanyaan\":\"Jenis Instansi\\/Bidang Usaha\\/Industri?\",\"jawaban\":\"Swasta\"},{\"pertanyaan\":\"Nama?\",\"jawaban\":\"Rizky Yananda\"},{\"pertanyaan\":\"Tempat Lahir?\",\"jawaban\":\"MEDAN\"},{\"pertanyaan\":\"Tanggal Lahir?\",\"jawaban\":\"1996-06-06\"},{\"pertanyaan\":\"Jenis Kelamin?\",\"jawaban\":[\"laki-laki\"]},{\"pertanyaan\":\"Alamat Sekarang\\t?\",\"jawaban\":\"Jl. Hidup Baru Jakarta Selatan\"},{\"pertanyaan\":\"No. Telp\\/Hp\\t?\",\"jawaban\":\"082389123898\"},{\"pertanyaan\":\"E-mail\\t?\",\"jawaban\":\"yanandarizky@gmail.com\"},{\"pertanyaan\":\"Th. Masuk\\t?\",\"jawaban\":\"2014\"},{\"pertanyaan\":\"Th. Lulus\\t?\",\"jawaban\":\"2018\"},{\"pertanyaan\":\"Prodi\\t?\",\"jawaban\":[\"Teknik Informatika\"]},{\"pertanyaan\":\"IPK Lulusan\\t?\",\"jawaban\":[\"3.00-3.49\"]}]', NULL)' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Schema.php:674
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ha...')
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('<span class="st...')
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/Schema.php(432): yii\db\Command->execute()
+#3 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(600): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php(397): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\SiteController->actionPostAlumni()
+#8 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'id_jurusan' cannot be null
+)
+
+$_SERVER = [
+    'PATH' => '/bin:/usr/bin:/usr/local/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,en-US;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '4802',
+    'HTTP_COOKIE' => 'advanced-frontend=uocjonun440u1ej2ulfpadr917; _identity-frontend=17acef23b63b8779b66bdad08f59f31ef837db7155f99c93b459f0dc58e8bafba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B13%2C%22nb0qg1JTycVrpKDGr2A8Y_lUR1ymV1fi%22%2C2592000%5D%22%3B%7D; _csrf-frontend=7ec3d814da3bb504eae89cd5504368015dc69d867779f38fe8825c5aee6d09ffa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22kQgKavAMxT13vv42Q0We_HGDfnXrUODC%22%3B%7D',
+    'HTTP_HOST' => 'tracerstudy.puslit-suska.com',
+    'HTTP_REFERER' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php?r=site/alumni',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; U; Android 7.1.2; id-id; Redmi 4A Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser/11.1.7-g',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_ORIGIN' => 'http://tracerstudy.puslit-suska.com',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'DOCUMENT_ROOT' => '/home/puslitsu/tracerstudy.puslit-suska.com',
+    'REMOTE_ADDR' => '158.140.187.236',
+    'REMOTE_PORT' => '47371',
+    'SERVER_ADDR' => '103.129.220.6',
+    'SERVER_NAME' => 'tracerstudy.puslit-suska.com',
+    'SERVER_ADMIN' => 'webmaster@tracerstudy.puslit-suska.com',
+    'SERVER_PORT' => '80',
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fpost-alumni',
+    'SCRIPT_FILENAME' => '/home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'QUERY_STRING' => 'r=site%2Fpost-alumni',
+    'SCRIPT_URI' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'SCRIPT_URL' => '/frontend/web/index.php',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1570884977.5206730365753173828125,
+    'REQUEST_TIME' => 1570884977,
+    'argv' => [
+        'r=site%2Fpost-alumni',
+    ],
+    'argc' => 1,
+]
+[12-Oct-2019 13:18:09 UTC] An Error occurred while handling another error:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+exception 'yii\web\HeadersAlreadySentException' with message 'Headers already sent in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/controllers/SiteController.php on line 339.' in /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /home/puslitsu/tracerstudy.puslit-suska.com/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Response->send()
+#2 /home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'PATH' => '/bin:/usr/bin:/usr/local/bin',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '4811',
+    'HTTP_COOKIE' => 'advanced-frontend=2kipdd4jojv0cscm9pmu841cu2; _csrf-frontend=d945d2b008085f7a5f4ccc6f25d3fb9e73b19fdf86a6552c3958ddc3bd14daeaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VdUepJM9cbJBawCXWfAZvOb3ziPeax0n%22%3B%7D; advanced-backend=mddcc94gof0oplf07327pv9j94; _csrf-backend=f4a92713c87a78fc2c40671961cc4e964075096f545b7219f79bba393791d13ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%228BwFxeZIbJPaP1TdWi7bTEL8xNiD4Gy4%22%3B%7D; _identity-backend=41f5916426586b1c5bcd734a8c992ae39db1006d526653d62d8f08b22392bc05a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%2211AP0uGQrmM3bZhrG7OmYHSfKg1fhLv9%22%2C2592000%5D%22%3B%7D; _identity-frontend=aa7962b2a62a683a4bbbddf146b57541b25c20818b2be408c147a081c032c7d6a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A47%3A%22%5B16%2C%22P0AEdzk6sA7Ui8va4QD5Vh-c6MkWRCKd%22%2C2592000%5D%22%3B%7D',
+    'HTTP_HOST' => 'tracerstudy.puslit-suska.com',
+    'HTTP_REFERER' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php?r=site/alumni',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'DOCUMENT_ROOT' => '/home/puslitsu/tracerstudy.puslit-suska.com',
+    'REMOTE_ADDR' => '158.140.187.218',
+    'REMOTE_PORT' => '16408',
+    'SERVER_ADDR' => '103.129.220.6',
+    'SERVER_NAME' => 'tracerstudy.puslit-suska.com',
+    'SERVER_ADMIN' => 'webmaster@tracerstudy.puslit-suska.com',
+    'SERVER_PORT' => '80',
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fpost-alumni',
+    'SCRIPT_FILENAME' => '/home/puslitsu/tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'QUERY_STRING' => 'r=site%2Fpost-alumni',
+    'SCRIPT_URI' => 'http://tracerstudy.puslit-suska.com/frontend/web/index.php',
+    'SCRIPT_URL' => '/frontend/web/index.php',
+    'SCRIPT_NAME' => '/frontend/web/index.php',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SOFTWARE' => 'LiteSpeed',
+    'REQUEST_METHOD' => 'POST',
+    'X-LSCACHE' => 'on',
+    'PHP_SELF' => '/frontend/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1570886289.2984540462493896484375,
+    'REQUEST_TIME' => 1570886289,
+    'argv' => [
+        'r=site%2Fpost-alumni',
+    ],
+    'argc' => 1,
+]
+[12-Oct-2019 13:36:47 UTC] PHP Fatal error:  Class 'Title' not found in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/views/site/perusahaan.php on line 35
+[12-Oct-2019 13:36:48 UTC] PHP Fatal error:  Class 'Title' not found in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/views/site/perusahaan.php on line 35
+[12-Oct-2019 13:36:49 UTC] PHP Fatal error:  Class 'Title' not found in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/views/site/perusahaan.php on line 35
+[12-Oct-2019 13:36:49 UTC] PHP Fatal error:  Class 'Title' not found in /home/puslitsu/tracerstudy.puslit-suska.com/frontend/views/site/perusahaan.php on line 35
