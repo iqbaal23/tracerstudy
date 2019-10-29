@@ -41,6 +41,7 @@
                     ['label' => 'Info Lowongan', 'icon' => 'list-alt', 'url' => ['/lowongan/index']],
                     ['label' => 'Hasil Kusioner', 'options' => ['class' => 'header']],
                     ['label' => 'Hasil Kusioner', 'icon' => 'bandcamp', 'url' => ['/hasil-kuisioner-alumni/index']],
+                    ['label' => 'Data Kusioner Perusahaan', 'icon' => 'bandcamp', 'url' => ['/hasil-kuisioner-perusahaan/index']],
 
                     // ['label' => 'Data Berita', 'icon' => 'list-alt', 'url' => ['/berita/index']],
                 ],
