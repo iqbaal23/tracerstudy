@@ -25,7 +25,7 @@ $this->title = 'Tracer Study';
             </a>
         </div>
         <div data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 150">
-            <a href="#search" data-uk-toggle class="uk-card uk-card-box uk-card-body uk-border-rounded">
+            <a href="?r=site/agenda" data-uk-toggle class="uk-card uk-card-box uk-card-body uk-border-rounded">
                     <span class="uk-icon-forder uk-border-rounded">
                         <span data-uk-icon="icon: check; ratio: 2"></span></span>
                 <p>Agenda   </p>

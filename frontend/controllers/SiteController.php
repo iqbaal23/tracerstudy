@@ -154,6 +154,16 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
+     /**
+     * Displays agenda page.
+     *
+     * @return mixed
+     */
+    public function actionAgenda()
+    {
+        return $this->render('agenda');
+    }
+
     /**
      * Signs user up.
      *
