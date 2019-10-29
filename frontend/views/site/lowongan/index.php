@@ -10,6 +10,12 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
 
+    <?php if (!Yii::$app->user->isGuest) : ?>
+        <div class="box-header with-border">
+            <?= Html::a('Lowongan Saya', ['lowongan/index'], ['class' => 'btn btn-success btn-flat']) ?>
+        </div>
+    <?php endif; ?>
+
     <p>Daftar Jurusan, Anda Juga Bisa Melihat Jawab Kusioner Dari Alumni</p>
 
     <!-- <code><?= __FILE__ ?></code> -->

@@ -61,13 +61,13 @@ $this->params['breadcrumbs'][] = $this->title;
                             </p>
                         </div>
                         <div class="">
-                            <?= Html::beginForm(['/site/post-alumni'], 'post'); ?>
+                            <?= Html::beginForm(['/site/post-perusahaan'], 'post'); ?>
                             <div class="alert alert-info">
                                 <div class="form-group">
-                                    <label for="">Username Alumni</label>
-                                    <input required type="text" value="<?= Yii::$app->user->identity->username ?>" readonly class="form-control" id="" placeholder="Username penjawab kuisioner alumni..." name="username">
+                                    <label for="">Username Perusahaan</label>
+                                    <input required type="text" value="<?= Yii::$app->user->identity->username ?>" readonly class="form-control" id="" placeholder="Username perusahaan..." name="username">
                                     <br>
-                                    <input required type="text" class="form-control" id="" placeholder="Nama Lengkap penjawab kuisioner alumni..." name="nama">
+                                    <input required type="text" class="form-control" id="" placeholder="Nama Lengkap penjawab kuisioner ..." name="nama">
                                     <input required type="hidden" class="form-control" value="alumni" placeholder="Nama penjawab kuisioner..." name="status">
                                 </div>
                             </div>
@@ -92,16 +92,18 @@ $this->params['breadcrumbs'][] = $this->title;
                                                     <input required type="hidden" name="format_jawaban[]" value="<?= $kuisioner->format_pertanyaan ?>">
                                                     <?php if ($kuisioner->format_pertanyaan == 'radio' || $kuisioner->format_pertanyaan == 'radio2') : ?>
                                                         <?php $jawaban = json_decode($kuisioner->jawaban) ?>
-                                                        <?php foreach ($jawaban as $radio) : ?>
-                                                            <div class="radio">
-                                                                <?php if ($radio == 'text') : ?>
-                                                                    <label id="<?= $c ?>label"><input required type="radio" placeholder="" name="jawaban[<?= $c ?>][0]" value="null">Lain-lain</label>
-                                                                    <input type="text" placeholder="Yang lainya..." class="form-control" id="<?= $c ?>text" name="jawaban[<?= $c ?>][1]">
-                                                                <?php else : ?>
-                                                                    <label><input required type="radio" id="" placeholder="" name="jawaban[<?= $c ?>][0]" value="<?= $radio ?>"><?= $radio ?></label><br>
-                                                                <?php endif; ?>
-                                                            </div>
-                                                        <?php endforeach; ?>
+                                                        <?php if(is_array($jawaban)) : ?>
+                                                            <?php foreach ($jawaban as $radio) : ?>
+                                                                <div class="radio">
+                                                                    <?php if ($radio == 'text') : ?>
+                                                                        <label id="<?= $c ?>label"><input required type="radio" placeholder="" name="jawaban[<?= $c ?>][0]" value="null">Lain-lain</label>
+                                                                        <input type="text" placeholder="Yang lainya..." class="form-control" id="<?= $c ?>text" name="jawaban[<?= $c ?>][1]">
+                                                                    <?php else : ?>
+                                                                        <label><input required type="radio" id="" placeholder="" name="jawaban[<?= $c ?>][0]" value="<?= $radio ?>"><?= $radio ?></label><br>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            <?php endforeach; ?>
+                                                        <?php endif; ?>
                                                     <?php elseif ($kuisioner->format_pertanyaan == 'text') : ?>
                                                         <input required type="text" name="jawaban[<?= $c ?>]" placeholder="Jawaban anda..." class="form-control">
                                                     <?php elseif ($kuisioner->format_pertanyaan == 'number') : ?>
