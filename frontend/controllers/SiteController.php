@@ -309,6 +309,8 @@ class SiteController extends Controller
     public function actionPerusahaan()
     {
         $alumni = Kuisioner::find()->where(['tujuan' => "user"])->all();
+        // $alumni = Kuisioner::find()->where(['tujuan' => "alumni"])->all();
+
         // var_dump($alumni);
         // exit();
         return $this->render('perusahaan', ['kuisioners' => $alumni]);
