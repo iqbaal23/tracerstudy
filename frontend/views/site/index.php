@@ -67,7 +67,7 @@ $this->title = 'Tracer Study';
             </a>
         </div>
         <div data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 200">
-            <a href="?r=site/lihat" class="uk-card uk-card-box uk-card-body uk-border-rounded">
+            <a href="?r=site/grafik" class="uk-card uk-card-box uk-card-body uk-border-rounded">
                     <span class="uk-icon-forder uk-border-rounded">
                         <span data-uk-icon="icon: cart; ratio: 2"></span></span>
                 <p>Grafik</p>

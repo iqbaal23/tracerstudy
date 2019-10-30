@@ -66,9 +66,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <div class="form-group">
                                     <label for="">Username Perusahaan</label>
                                     <input required type="text" value="<?= Yii::$app->user->identity->username ?>" readonly class="form-control" id="" placeholder="Username perusahaan..." name="username">
+                                    <input required type="hidden" class="form-control" value="perusahaan" placeholder="Nama penjawab kuisioner..." name="status">
                                     <br>
-                                    <input required type="text" class="form-control" id="" placeholder="Nama Lengkap penjawab kuisioner ..." name="nama">
-                                    <input required type="hidden" class="form-control" value="alumni" placeholder="Nama penjawab kuisioner..." name="status">
                                 </div>
                             </div>
                             <div class="panel panel-default">
