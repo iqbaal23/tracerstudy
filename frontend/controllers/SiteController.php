@@ -577,6 +577,7 @@ class SiteController extends Controller
             // $data[$hasil[31]->jawaban]['pr'] = $hasil[26]->jawaban[0];
             $i++;
         }
+        ksort($data);
         // print_r($data);
         // exit;
         return $this->render('grafik', [
