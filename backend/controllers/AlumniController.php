@@ -11,6 +11,7 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * AlumniController implements the CRUD actions for Alumni model.
@@ -101,9 +102,20 @@ class AlumniController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $foto = UploadedFile::getInstance($model, 'foto');
+        if ($model->load(Yii::$app->request->post())) {
+            if($model->foto == ""){
+                $foto->saveAs(Yii::getAlias('foto') . '/' . $foto->baseName . "." . $foto->getExtension());
+                $model->foto = $foto->name;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id_alumni]);
+                $save = $model->save();
+                if($save){
+                    return $this->redirect(['view', 'id' => $model->id_alumni]);
+                }
+            }
+            // if($model->save()){
+            //     return $this->redirect(['view', 'id' => $model->id_alumni]);
+            // }
         }
 
         return $this->render('update', [

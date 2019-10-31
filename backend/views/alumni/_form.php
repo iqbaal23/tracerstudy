@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\file\FileInput;
+
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Alumni */
@@ -10,7 +12,7 @@ use yii\widgets\ActiveForm;
 
 <div class="alumni-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
 
     <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
 
@@ -38,7 +40,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'pekerjaan')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'foto')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'foto')->widget(FileInput::className(), [
+    'options' => ['accept' => 'image/*']
+    ]) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
