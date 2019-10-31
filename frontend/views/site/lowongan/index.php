@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Daftar Jurusan';
+$this->title = 'Daftar Lowongan';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
@@ -16,16 +16,15 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     <?php endif; ?>
 
-    <p>Daftar Jurusan, Anda Juga Bisa Melihat Jawab Kusioner Dari Alumni</p>
+    <br>
 
     <!-- <code><?= __FILE__ ?></code> -->
     <div class="uk-light uk-grid-medium uk-child-width-1-3@m uk-grid-small uk-grid-match tm-margin-large-top uk-text-center" data-uk-grid>
         <?php foreach ($lowongans as $l) : ?>
             <div data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 100">
-                <a href="#" class="uk-card uk-card-box uk-card-body uk-border-rounded"  data-toggle="modal" data-target="#<?= $l->lowongan_id ?>">
+                <a href="?r=lowongan%2Fview&id=<?=$l['lowongan_id']?>" class="uk-card uk-card-box uk-card-body uk-border-rounded"  data-target="#<?= $l->lowongan_id ?>">
                     <span class="uk-border-rounded">
-
-                        <img src="<?=Yii::getAlias('@lowonganImgPath').'/'.$l['file']?>" alt="" />
+                        <img src="<?= Yii::$app->request->baseUrl ?>/lowongan/<?= $l->file ?>" alt="" />
                     </span>
                     <p><?= $l->judul ?></p>
                 </a>

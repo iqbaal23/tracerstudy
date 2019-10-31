@@ -82,16 +82,12 @@ class LowonganController extends Controller
     {
         $model = new Lowongan();
 
-        $data = Yii::$app->request->post();
+        $foto = UploadedFile::getInstance($model, 'file');
         if ($model->load(Yii::$app->request->post())) {
-            $foto = UploadedFile::getInstance($model, 'file');
-
-            $model->file = $foto->baseName . '.' . $foto->extension;
-            $foto->saveAs(Yii::$app->basePath . '/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
+            $foto->saveAs(Yii::getAlias('@frontend') . '/web/lowongan/' . $foto->baseName . "." . $foto->getExtension());
+            $model->file = $foto->name;
 
             $model->save();
-            // var_dump();
-            //exit();
             return $this->redirect(['view', 'id' => $model->lowongan_id]);
         } else {
             return $this->render('create', [
@@ -114,7 +110,8 @@ class LowonganController extends Controller
             $foto = UploadedFile::getInstance($model, 'file');
 
             if (!empty($gambar) && $foto->size != 0) {
-                $foto->saveAs(Yii::$app->basePath . '/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
+                // $foto->saveAs(Yii::$app->basePath . '/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
+                $foto->saveAs(Yii::getAlias('@frontend') . '/web/lowongan/' . $foto->baseName . "." . $foto->getExtension());
                 $model->file = $foto->baseName . '.' . $foto->extension;
             } else {
                 $model->file = $gambar;
