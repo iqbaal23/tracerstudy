@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 100">
                 <a href="#" class="uk-card uk-card-box uk-card-body uk-border-rounded"  data-toggle="modal" data-target="#<?= $l->lowongan_id ?>">
                     <span class="uk-border-rounded">
-                        <img src="<?= Yii::$app->params['front'] ?><?= $l->file ?>" alt="" />
+                        <img src="<?= Yii::$app->request->baseUrl ?>/lowongan/<?= $l->file ?>" alt="" />
                     </span>
                     <p><?= $l->judul ?></p>
                 </a>
