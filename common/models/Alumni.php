@@ -50,7 +50,12 @@ class Alumni extends \yii\db\ActiveRecord
             [['agama'], 'string', 'max' => 25],
             [['telp'], 'string', 'max' => 20],
             [['ipk'], 'string', 'max' => 5],
-            [['foto'], 'file', 'skipOnEmpty' => TRUE, 'extensions' => 'png, jpg'],
+            [
+                ['foto'], 'file', 
+                'skipOnEmpty' => TRUE, 
+                'extensions' => 'png, jpg',
+                
+            ],
         ];
     }
 

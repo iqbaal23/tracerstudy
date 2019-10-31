@@ -87,8 +87,7 @@ class LowonganController extends Controller
             $foto = UploadedFile::getInstance($model, 'file');
 
             $model->file = $foto->baseName . '.' . $foto->extension;
-            $foto->saveAs(Yii::$app->basePath . '/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
-
+            $foto->saveAs(Yii::getAlias('@backend') . '/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
             $model->save();
             // var_dump();
             //exit();
@@ -114,7 +113,7 @@ class LowonganController extends Controller
             $foto = UploadedFile::getInstance($model, 'file');
 
             if (!empty($gambar) && $foto->size != 0) {
-                $foto->saveAs(Yii::$app->basePath . '/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
+                $foto->saveAs(Yii::getAlias('@backend') . '/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
                 $model->file = $foto->baseName . '.' . $foto->extension;
             } else {
                 $model->file = $gambar;
