@@ -41,6 +41,7 @@
                     ['label' => 'Info Lowongan', 'icon' => 'list-alt', 'url' => ['/lowongan/index']],
                     ['label' => 'Menu Frontend', 'options' => ['class' => 'header']],
                     ['label' => 'Berita', 'icon' => 'info', 'url' => ['/berita/index']],
+                    ['label' => 'Agenda', 'icon' => 'info', 'url' => ['/agenda/index']],
                     ['label' => 'Hasil Kusioner', 'options' => ['class' => 'header']],
                     ['label' => 'Hasil Kusioner', 'icon' => 'bandcamp', 'url' => ['/hasil-kuisioner-alumni/index']],
                     ['label' => 'Data Kusioner Perusahaan', 'icon' => 'bandcamp', 'url' => ['/hasil-kuisioner-perusahaan/index']],
