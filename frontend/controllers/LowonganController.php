@@ -10,6 +10,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
+use yii\helpers\Url;
 
 /**
  * LowonganController implements the CRUD actions for Lowongan model.
@@ -87,7 +88,12 @@ class LowonganController extends Controller
             $foto = UploadedFile::getInstance($model, 'file');
 
             $model->file = $foto->baseName . '.' . $foto->extension;
-            $foto->saveAs(Yii::$app->basePath . '/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
+            // $foto->saveAs($_SERVER['DOCUMENT_ROOT'] . '/tracerstudy.puslit-suska.com/backend/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
+            // $foto->saveAs('http://localhost/tracerstudy.puslit-suska.com/backend/web/lowongan/' . $foto->baseName . '.' . $foto->extension);
+            $foto->saveAs(
+                Url::to('@backend/web/images/') . $foto->baseName . '.' . $foto->extension
+            );
+
 
             $model->save();
             // var_dump();

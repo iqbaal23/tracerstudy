@@ -105,7 +105,7 @@ class AlumniController extends Controller
         $foto = UploadedFile::getInstance($model, 'foto');
         if ($model->load(Yii::$app->request->post())) {
             if($model->foto == ""){
-                $foto->saveAs(Yii::getAlias('foto') . '/' . $foto->baseName . "." . $foto->getExtension());
+                $foto->saveAs(Yii::getAlias('@frontend') . '/web/foto/' . $foto->baseName . "." . $foto->getExtension());
                 $model->foto = $foto->name;
 
                 $save = $model->save();

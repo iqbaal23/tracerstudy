@@ -4,7 +4,7 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Daftar Jurusan';
+$this->title = 'Daftar Lowongan';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     <?php endif; ?>
 
-    <p>Daftar Jurusan, Anda Juga Bisa Melihat Jawab Kusioner Dari Alumni</p>
+    <br>
 
     <!-- <code><?= __FILE__ ?></code> -->
     <div class="uk-light uk-grid-medium uk-child-width-1-3@m uk-grid-small uk-grid-match tm-margin-large-top uk-text-center" data-uk-grid>
