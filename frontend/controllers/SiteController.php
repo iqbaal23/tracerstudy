@@ -339,6 +339,18 @@ class SiteController extends Controller
         return $this->render('jurusan/index', ['jurusans' => $dataJurusan]);
     }
 
+    public function actionLulusan()
+    {
+        $data = Alumni::find()->orderBy(['username' => SORT_ASC])->all();
+        return $this->render('alumni/lulusan',['alumni'=>$data]);
+    }
+    
+    public function actionJawaban($id)
+    {
+        $data = HasilKuisionerAlumni::find()->where(['id_user' => $id])->one();
+        return $this->render('alumni/jawaban',['jawaban'=> $data]);
+    }
+
     public function actionLowongan()
     {
         $dataLowongan = Lowongan::find()->orderBy(['lowongan_id' => SORT_DESC])->all();

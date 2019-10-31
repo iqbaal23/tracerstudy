@@ -40,7 +40,7 @@ MinimalAsset::register($this);
                 <div class="uk-container uk-container-expand">
                     <nav class="uk-navbar">
                         <div class="uk-navbar-left">
-                           
+
                             <a href="?r=site/index" class="uk-navbar-item uk-logo"><span data-uk-icon="icon: desktop"></span>&nbsp;Tracer Study</a>
                         </div>
                         <div class="uk-navbar-center uk-visible@m">
@@ -53,10 +53,10 @@ MinimalAsset::register($this);
 
                         </div>
                         <div class="uk-navbar-right">
-                        <?php if (!Yii::$app->user->isGuest) : ?>
+                            <?php if (!Yii::$app->user->isGuest) : ?>
 
-<a class="uk-navbar-toggle " href="#search" data-uk-toggle><b>Profile</b></a>
-<?php endif ?>
+                                <a class="uk-navbar-toggle " href="#search" data-uk-toggle><b>Profile</b></a>
+                            <?php endif ?>
                             <?= Yii::$app->user->isGuest ? Html::a(
                                 Yii::t(
                                     'app',
@@ -70,7 +70,7 @@ MinimalAsset::register($this);
                                     ['class' => 'btn btn-link logout', 'style' => 'color:#fff', 'alt' => 'sign-out']
                                 )
                                 . Html::endForm()) ?>
-               
+
                             <a class="uk-navbar-toggle " href="#search" data-uk-search-icon data-uk-toggle></a>
                             <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
                         </div>
@@ -157,6 +157,11 @@ MinimalAsset::register($this);
     </div>
     <?php $this->endBody() ?>
 </body>
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
+</script>
 
 </html>
 <?php $this->endPage() ?>
