@@ -188,22 +188,20 @@ class SiteController extends Controller
             // var_dump(Yii::getAlias('@alumniImgPath') . '/' . $foto->baseName . $foto->getExtension());
             // exit();
             $modelAlumni->load(Yii::$app->request->post());
-            if ($modelAlumni->foto != NULL) {
-                $foto->saveAs(Yii::getAlias('@alumniImgPath') . '/' . $foto->baseName . $foto->getExtension());
+            if ($modelAlumni->foto == "") {
+                $foto->saveAs(Yii::getAlias('foto') . '/' . $foto->baseName .".". $foto->getExtension());
+                $modelAlumni->username = $data['SignupForm']['username'];
+                $modelAlumni->foto = $foto->name;
+                $modelAlumni->email = $data['SignupForm']['email'];
+                $modelAlumni->reg = date('Ymd') . $data['SignupForm']['username'];
+                $modelAlumni->save(false);
                 // exit();
+                $model->signup(date('Ymd') . $data['SignupForm']['username']);
+                Yii::$app->session->setFlash('success', 'Terima Kasih Telah Mendaftar');
+                return $this->goHome();
             } else {
                 $modelAlumni->foto = null;
             }
-
-            $modelAlumni->username = $data['SignupForm']['username'];
-            $modelAlumni->foto = $foto->name;
-            $modelAlumni->email = $data['SignupForm']['email'];
-            $modelAlumni->reg = date('Ymd') . $data['SignupForm']['username'];
-            $modelAlumni->save(false);
-            // exit();
-            $model->signup(date('Ymd') . $data['SignupForm']['username']);
-            Yii::$app->session->setFlash('success', 'Terima Kasih Telah Mendaftar');
-            return $this->goHome();
         }
 
         return $this->render('signup', [
@@ -563,6 +561,17 @@ class SiteController extends Controller
     {
         $berita = Berita::find()->orderBy(['berita_id' => SORT_DESC])->all();
         return $this->render('berita/index', ['berita' => $berita]);
+    }
+
+    public function actionAlbum()
+    {
+        $data = Alumni::find()->all();
+        return $this->render(
+            'album',
+            [
+                'album' => $data,
+            ]
+        );
     }
 
     public function actionGrafik()
