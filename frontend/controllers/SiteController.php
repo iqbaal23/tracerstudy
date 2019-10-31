@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use common\models\HasilKuisionerAlumni;
 use common\models\Alumni;
+use common\models\Agenda;
 use common\models\Jurusan;
 use common\models\Kuisioner;
 use frontend\models\ResendVerificationEmailForm;
@@ -163,7 +164,13 @@ class SiteController extends Controller
      */
     public function actionAgenda()
     {
-        return $this->render('agenda');
+        $dataAgenda = Agenda::find()->orderBy(['agenda_id' => SORT_DESC])->all();
+        return $this->render(
+            'agenda',
+            [
+                'agenda' => $dataAgenda
+            ]
+        );
     }
 
     /**
