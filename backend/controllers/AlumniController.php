@@ -2,6 +2,8 @@
 
 namespace backend\controllers;
 
+use app\models\HasilKuisionerAlumni;
+use common\models\User;
 use Yii;
 use common\models\Alumni;
 use common\models\AlumniSearch;
@@ -29,7 +31,7 @@ class AlumniController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index','error','view','create','update'],
+                        'actions' => ['logout', 'cek', 'index', 'error', 'view', 'create', 'update', 'delete'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -43,7 +45,6 @@ class AlumniController extends Controller
             ],
         ];
     }
-
     /**
      * Lists all Alumni models.
      * @return mixed
@@ -122,6 +123,16 @@ class AlumniController extends Controller
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+    }
+    
+    
+    public function actionCek($id)
+    {
+        $data = Alumni::findOne($id);
+        $User = User::find()->where(['no_reg' => $data->reg])->one();
+        $hasilK = HasilKuisionerAlumni::find()->where(['id_user' => $User['id']])->one();
+
+        return $this->render('cek', ['jawaban' => $hasilK]);
     }
 
     /**

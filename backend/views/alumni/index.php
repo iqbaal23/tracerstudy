@@ -55,7 +55,16 @@ $this->params['breadcrumbs'][] = $this->title;
                             //'pekerjaan:ntext',
                             //'foto',
 
-                            ['class' => 'yii\grid\ActionColumn'],
+                            [
+                                'class' => 'yii\grid\ActionColumn',
+                                'template' => '{view} {update} {delete} {myButton}',  // the default buttons + your custom button
+                                'buttons' => [
+                                    'myButton' => function ($url, $model, $key) {     // render your custom button
+                                        return Html::a('Hasil Kusioner', ['alumni/cek', 'id' => $model->id_alumni], ['class' => "btn btn-primary"]);
+                                    }
+                                ]
+
+                            ],
                         ],
                     ]); ?>
 
