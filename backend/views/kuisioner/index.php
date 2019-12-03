@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'pertanyaan:ntext',
                             'format_pertanyaan',
                             'jawaban:ntext',
-                            //'tujuan',
+                            // 'tujuan:ntext',
 
                             ['class' => 'yii\grid\ActionColumn'],
                         ],

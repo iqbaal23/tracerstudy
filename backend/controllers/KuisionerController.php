@@ -67,6 +67,7 @@ class KuisionerController extends SiteController
         $model = new Kuisioner();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
             return $this->redirect(['view', 'id' => $model->id_kuisioner]);
         }
 

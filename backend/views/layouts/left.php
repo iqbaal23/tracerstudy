@@ -44,10 +44,20 @@
                     ['label' => 'Agenda', 'icon' => 'info', 'url' => ['/agenda/index']],
                     ['label' => 'Hasil Kusioner', 'options' => ['class' => 'header']],
                     ['label' => 'Hasil Kusioner', 'icon' => 'bandcamp', 'url' => ['/hasil-kuisioner-alumni/index']],
-                    ['label' => 'Data Kusioner Perusahaan', 'icon' => 'bandcamp', 'url' => ['/hasil-kuisioner-perusahaan/index']],
 
-                    // ['label' => 'Data Berita', 'icon' => 'list-alt', 'url' => ['/berita/index']],
-                ],
+                    // ['label' => 'Data Kusioner Perusahaan', 'icon' => 'bandcamp', 'url' => ['/hasil-kuisioner-perusahaan/index']],
+                    
+            // ['label' => 'Data Berita', 'icon' => 'list-alt', 'url' => ['/berita/index']],
+                    ['label' => 'Grafik', 'options' => ['class' => 'header']],
+                    ['label' => 'Jurusan', 'icon' => 'bandcamp', 'url' => ['/site/grafik/']],
+
+                    ['label' => 'Kesesusain Pekerjaan', 'icon' => 'bandcamp', 'url' => ['/site/kesesuaian/']],
+                    
+                    ['label' => 'Kepuasan Pekerjaan', 'icon' => 'bandcamp', 'url' => ['/site/kepuasan/']],
+            
+                    ['label' => 'Tes', 'icon' => 'bandcamp', 'url' => ['/grafik/index']],
+                    
+            ],
             ]
         ) ?>
 

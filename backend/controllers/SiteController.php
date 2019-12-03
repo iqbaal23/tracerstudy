@@ -2,6 +2,8 @@
 
 namespace backend\controllers;
 
+use common\models\HasilKuisionerAlumni;
+
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -31,6 +33,21 @@ class SiteController extends Controller
                         'allow' => true,
                         'roles' => ['@'],
                     ],
+                    [
+                        'actions' => ['grafik', 'index'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                    [
+                        'actions' => ['kesesuaian', 'index'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                    [
+                        'actions' => ['kepuasan', 'index'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ]
                 ],
             ],
             'verbs' => [
@@ -98,4 +115,63 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+
+    public function actionGrafik()
+    {
+        $data = [];
+        $hasil_kuisioners = HasilKuisionerAlumni::find()->all();
+        $i = 0;
+        foreach ($hasil_kuisioners as $hasil_kuisioner) {
+            $hasil = json_decode($hasil_kuisioner->pertanyaan_jawaban);
+            $data[$hasil[31]->jawaban][$i] = $hasil[32]->jawaban[0];
+            // $data[$hasil[31]->jawaban]['pr'] = $hasil[26]->jawaban[0];
+            $i++;
+        }
+        ksort($data);
+        // print_r($data);
+        // exit;
+        return $this->render('grafik', [
+            'data' => $data,
+            'hasilKuisioner' => $hasil
+        ]);
+    }
+
+    public function actionKesesuaian()
+    {
+        $data = [];
+        $hasil_kuisioners = HasilKuisionerAlumni::find()->all();
+        $i = 0;
+        foreach ($hasil_kuisioners as $hasil_kuisioner) {
+            $hasil = json_decode($hasil_kuisioner->pertanyaan_jawaban);
+            $data[$hasil[31]->jawaban][$i] = $hasil[10]->jawaban[0];
+            // $data[$hasil[31]->jawaban]['pr'] = $hasil[26]->jawaban[0];
+            $i++;
+        }
+        ksort($data);
+        // exit;
+        return $this->render('kesesuaian', [
+            'data' => $data,
+            'hasilKuisioner' => $hasil
+        ]);
+    }
+
+    public function actionKepuasan()
+    {
+        $data = [];
+        $hasil_kuisioners = HasilKuisionerAlumni::find()->all();
+        $i = 0;
+        foreach ($hasil_kuisioners as $hasil_kuisioner) {
+            $hasil = json_decode($hasil_kuisioner->pertanyaan_jawaban);
+            $data[$hasil[31]->jawaban][$i] = $hasil[11]->jawaban[0];
+            // $data[$hasil[31]->jawaban]['pr'] = $hasil[26]->jawaban[0];
+            $i++;
+        }
+        ksort($data);
+        // exit;
+        return $this->render('kepuasan', [
+            'data' => $data,
+            'hasilKuisioner' => $hasil
+        ]);
+    }
+    
 }

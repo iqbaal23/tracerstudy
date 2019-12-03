@@ -2,7 +2,7 @@
 /* @var $this yii\web\View */
 $this->title = 'Hasil Kusioner Almuni'
 ?>
-
+<!-- <pre><?php var_dump($harapan)?></pre> -->
 <div class="row">
     <div class="col-lg-6">
         <div class="panel panel-default">
