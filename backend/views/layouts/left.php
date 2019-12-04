@@ -49,11 +49,12 @@
                     
             // ['label' => 'Data Berita', 'icon' => 'list-alt', 'url' => ['/berita/index']],
                     ['label' => 'Grafik', 'options' => ['class' => 'header']],
-                    ['label' => 'Jurusan', 'icon' => 'bandcamp', 'url' => ['/site/grafik/']],
+                    ['label' => 'Jurusan', 'icon' => 'bandcamp', 'url' => ['/site/grafik/'], 'active' => $this->context->route == 'site/grafik'],
+                    // ['label' => 'About', 'url' => ['/about'], 'active' => $this->context->route == 'site/about'],
 
-                    ['label' => 'Kesesusain Pekerjaan', 'icon' => 'bandcamp', 'url' => ['/site/kesesuaian/']],
+                    ['label' => 'Kesesusain Pekerjaan', 'icon' => 'bandcamp', 'url' => ['/site/kesesuaian/'], 'active' => $this->context->route == 'site/kesesuaian'],
                     
-                    ['label' => 'Kepuasan Pekerjaan', 'icon' => 'bandcamp', 'url' => ['/site/kepuasan/']],
+                    ['label' => 'Kepuasan Pekerjaan', 'icon' => 'bandcamp', 'url' => ['/site/kepuasan/'], 'active' => $this->context->route == 'site/kepuasan'],
             
                     ['label' => 'Tes', 'icon' => 'bandcamp', 'url' => ['/grafik/index']],
                     

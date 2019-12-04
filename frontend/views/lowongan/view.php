@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
           'label' => 'Lowongan Foto',
           'format' => 'raw',
           'value' => '<button type="button" class="btn btn-default"
-            data-toggle="modal" data-target="#foto-' . $model->lowongan_id . '"><img src="' . Yii::$app->request->baseUrl . '/lowongan/' . $model->file . '" width="60px" height="60px"/></button>
+            data-toggle="modal" data-target="#foto-' . $model->lowongan_id . '"><img src="' . Yii::$app->params['front'] . $model->file . '" width="60px" height="60px"/></button>
 
             <div class="modal fade " id="foto-' . $model->lowongan_id . '" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
               <div class="modal-dialog modal-lg" role="document">
@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h2 class="modal-title text-center" id="exampleModalLabel">' . $model->file . '</h2>
                   </div>
                   <div class="modal-body text-center">
-                        <img src="' . Yii::$app->request->baseUrl . '/lowongan/' . $model->file . '" width="800px"/>
+                        <img src="' . Yii::$app->params['front'] . $model->file . '" width="800px"/>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
